@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+background: linear-gradient(45deg, #3c23aa, #125688, #3568df, #239dd5, #2ea7b228);
+background-size: 1000% 400%;
+animation: gradient 20s ease infinite;
+height: 300vh; 
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+} 
+
+main{
+  display: inline-block;
+}
+
+header{
+display:flex;
+justify-content:end;
+align-items: center;
+padding: 20px;
+margin: 20px;
+}
+
+nav{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+position:fixed;
+  background-color: rgba(25, 98, 189, 0.7);
+  backdrop-filter: blur(5px);
+border-radius: 20px;
+}
+
+nav a {
+padding:20px;
+text-decoration: none;
+font-size: 1.2em;
+color: var(--honey);
+
+}
+
+#home-page{
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+align-content: flex-end;
+text-align: center;
+margin-right:90px;
+}
+
+#home-page article{
+margin:auto;
+font-size: 40px
+}
+
+.robot{
+  margin:20px;
+  padding: 50px;
+  height: 300px;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+#experience{
+
+  margin:20px;
+  padding: 50px;
+  height: 500px;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.job{
+  margin-top: 50px;
+}
+
+
+#headshot{
+border-radius: 50%;
+max-width: 150px;
+max-height: 150px;
+float: left;
+margin-right: 25px;
+}
+
+#head-paragraph{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  line-height: 40px;
+} 
+
+#education{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content: space-evenly;
+margin:40px;
+}
+#ut-logo{
+max-width: 150px;
+max-height:150px;
+}
+
+
+
+.undergrad{
+  padding-top: 10px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+.project-section{
+  margin:20px;
+  padding: 50px;
+  height: 1000px;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+
+
+.project-grid{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 40px;
+}
+
+#beach-image{
+  width: 900px;
+  height:auto;
+  padding-top: 20px;
+
+}
+
+.small-app-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  margin-top: -4px;
+}
+.project-title{
+  position: absolute;
+  color:white;
+  background-color: aqua;
+  Text-align: center;
+}
+
+.project-image{
+    width: 300px;
+    height: 175px;
+}
+
+#Contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+footer{
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    }
+    
+    nav{
+      display: inline-block;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: rgba(25, 98, 189, 0.7);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+    }
+    
+    
+    #home-page{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    text-align: center;
+    margin-left: 120px;
+}
+    
+    #home-page article{
+    margin:auto;
+    font-size: 20px
+    }
+    
+    .robot{
+      display: inline-block;
+      margin: 5px;
+      padding: 50px;
+      height: auto;
+      background-color: #0072bb;
+      color: #ffffff;
+      max-width: 400px;
+    }
+    
+    #experience{
+    
+      margin: 5px;
+      padding: 50px;
+      height: auto;
+      background-color: #0072bb;
+      color: #ffffff;
+      max-width: 400px;
+    }
+    
+    .job{
+      margin-top: 50px;
+    }
+    
+    
+    #headshot{
+    display:inline-block;
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 25px;
+    }
+    
+    #head-paragraph{
+      display: inline-block;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      line-height: 40px;
+    } 
+    
+    #education{
+      display: inline-block;
+      margin: 5px;
+    }
+    #ut-logo{
+    max-width: 100px;
+    max-height:100px;
+    }
+    
+    
+    
+    .undergrad{
+      padding-top: 10px;
+      display: inline-block;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .project-section{
+      margin:20px;
+      padding: 50px;
+      height: 1000px;
+      background-color: #0072bb;
+      color: #ffffff;
+    }
+    
+    
+    
+    .project-grid{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    max-width: 400px;
+    }
+    
+    #beach-image{
+      width: auto;
+      height:auto;
+      padding-top: 20px;
+    
+    }
+    
+    .small-app-grid{
+      display: inline-block;
+      margin-top: -4px;
+    }
+    .project-title{
+      position: absolute;
+      color:white;
+      background-color: aqua;
+      Text-align: center;
+    }
+    
+    .project-image{
+        width: 300px;
+        height: 175px;
+    }
+    
+    #Contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+    
+    .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    }
+    
+    footer{
+      text-align: center;
+    }
+    
+}

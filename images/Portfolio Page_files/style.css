@@ -1,0 +1,81 @@
+:root {
+  --sky: #CAE4DB;
+  --honey: #DCAE1D;
+  --blue: #00303F;
+  --green: #7A9D96;
+
+
+}
+
+body {
+	background: linear-gradient(-45deg, #00303F, #125688, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+  display:flex;
+  justify-content:end;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  position:fixed;
+
+}
+
+nav a{
+  padding:20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: var(--honey);
+}
+
+#home-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+}
+
+article{
+  font-size: 48px;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
