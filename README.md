@@ -3,6 +3,8 @@
 ## Description
 A portfolio page that displays my web development projects and skills. 
 
+Deployed Link:
+Github Repository Link: 
 
 ## Usage
 
@@ -10,17 +12,11 @@ The Nav bar on the top right side of the screen contains links to help the user 
 
 There are four seperate sections on the webpage. The first section is titled "About-Me" and provides a photo and a description of my software-engineer history as well as my interests outside of engineering. 
 
-The next section contains my  resume. The resume provides my detailed work-experience and education. 
+The next section contains my skills. The skills section contains a list of my coding skills accompanied by proficieny bars. The proficiency bars indicate my knowledge and experience with each skill. 
 
-The next sectio ncontains my cuurrent projects. The first displayed largely on top of three other small projects. 
+The next section contains my cuurrent projects. If the user clicks on the project image, they will be taken to the project's specific github repository. 
 
-The last section contains my contact information including luinks to my social media acocunts. 
-
-
-Screenshots:
-
-![alt text](assets/images/screenshot.png)
-
+The last section contains my contact information including links to my social media acocunts and email. 
 
 
 ## License

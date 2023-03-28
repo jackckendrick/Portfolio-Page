@@ -1,367 +1,198 @@
-* {
-  box-sizing: border-box;
-  padding: 0%;
-  margin: 0%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+/* Globally Applied styles */
 body {
-background: linear-gradient(45deg, #3c23aa, #125688, #3568df, #239dd5, #2ea7b228);
-background-size: 1000% 400%;
-animation: gradient 20s ease infinite;
-height: 300vh; 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    
+    .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+    
+    /* Styles Applied to the Header */
+
+    header {
+    background-color: #25274d;
+    color: #fff;
+    padding: 20px 0;
+    }
+    
+    header .logo {
+    float: left;
+    font-size: 24px;
+    }
+    
+    header .logo a {
+    color: #fff;
+    }
+    
+    nav .nav-bar {
+    float: right;
+    }
+
+    
+    header .nav-bar ul {
+    list-style: none;
+    position:fixed;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header .nav-bar ul li {
+    display: inline-block;
+    margin-left: 20px;
+    }
+    
+    header .nav-bar ul li a {
+    color: #fff;
+    font-size: 16px;
+    }
+    
+    header .nav-bar ul li a:hover {
+    color: #feca1b;
 }
 
-@keyframes gradient {
-0% {
-  background-position: 0% 50%;
-}
-50% {
-  background-position: 100% 50%;
-}
-100% {
-  background-position: 0% 50%;
-}
-} 
-
-main{
-  display: inline-block;
-}
-
-header{
-display:flex;
-justify-content:end;
-align-items: center;
-padding: 20px;
-margin: 20px;
-}
-
-nav{
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-position:fixed;
-  background-color: rgba(25, 98, 189, 0.7);
-  backdrop-filter: blur(5px);
-border-radius: 20px;
-}
-
-nav a {
-padding:20px;
-text-decoration: none;
-font-size: 1.2em;
-color: var(--honey);
-
-}
-
-#home-page{
-display:flex;
-flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
-align-content: flex-end;
-text-align: center;
-margin-right:90px;
-}
-
-#home-page article{
-margin:auto;
-font-size: 40px
-}
-
-.robot{
-  margin:20px;
-  padding: 50px;
-  height: 300px;
-  background-color: #0072bb;
-  color: #ffffff;
-  border-radius: 20px;
-}
-
-
-#experience{
-
-  margin:20px;
-  padding: 50px;
-  height: 500px;
-  background-color: #0072bb;
-  color: #ffffff;
-  border-radius: 20px;
-}
-
-.job{
-  margin-top: 50px;
-}
-
-
-#headshot{
-border-radius: 50%;
-max-width: 150px;
-max-height: 150px;
-float: left;
-margin-right: 25px;
-}
-
-#head-paragraph{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  line-height: 40px;
-} 
-
-#education{
-display:flex;
-flex-direction:row;
-align-content:space-around;
-justify-content: space-evenly;
-margin:40px;
-border-radius: 20px;
-}
-#ut-logo{
-max-width: 150px;
-max-height:150px;
-}
-
-
-
-.undergrad{
-  padding-top: 10px;
-  display: inline-block;
-}
-
-
-
-
-
-
-
-.project-section{
-  margin:20px;
-  padding: 50px;
-  height: 1000px;
-  background-color: #0072bb;
-  color: #ffffff;
-  border-radius: 20px;
-}
-
-
-
-.project-grid{
-display:flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-top: 40px;
-}
-
-#beach-image{
-  width: 900px;
-  height:auto;
-  padding-top: 20px;
-
-}
-
-.small-app-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0;
-  margin-top: -4px;
-}
-.project-title{
-  position: absolute;
-  color:white;
-  background-color: aqua;
-  Text-align: center;
-}
-
-.project-image{
-    width: 300px;
-    height: 175px;
-}
-
-#Contact{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.fa-instagram {
-background: #125688;
-color: white;
-}
-
-.fa-linkedin {
-background: #007bb5;
-color: white;
-}
-
-footer{
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  header{
-    display: flex;
+header .nav-bar ul{
+    background-color: rgba(107, 162, 206, 0.5);
+    border-radius: 5%;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
     }
     
-    nav{
-      display: inline-block;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background-color: rgba(25, 98, 189, 0.7);
-      backdrop-filter: blur(5px);
-      border-radius: 20px;
-    }
-    
-    
-    #home-page{
-      display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: flex-end;
+    header .intro {
+    margin-top: 80px;
     text-align: center;
-    margin-left: 120px;
-}
-    
-    #home-page article{
-    margin:auto;
-    font-size: 20px
     }
     
-    .robot{
-      display: inline-block;
-      margin: 5px;
-      padding: 50px;
-      height: auto;
-      background-color: #0072bb;
-      color: #ffffff;
-      max-width: 400px;
-    }
-    
-    #experience{
-    
-      margin: 5px;
-      padding: 50px;
-      height: auto;
-      background-color: #0072bb;
-      color: #ffffff;
-      max-width: 400px;
-    }
-    
-    .job{
-      margin-top: 50px;
-    }
-    
-    
-    #headshot{
-    display:inline-block;
+    header img {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    max-width: 150px;
-    max-height: 150px;
-    margin-right: 25px;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
     }
     
-    #head-paragraph{
-      display: inline-block;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-      line-height: 40px;
-    } 
-    
-    #education{
-      display: inline-block;
-      margin: 5px;
+    header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
     }
-    #ut-logo{
-    max-width: 100px;
-    max-height:100px;
+    
+    header p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
     }
     
     
-    
-    .undergrad{
-      padding-top: 10px;
-      display: inline-block;
+    /* Main styles */
+    main {
+    padding: 100px 0;
     }
     
-    
-    
-    
-    
-    
-    
-    .project-section{
-      margin:20px;
-      padding: 50px;
-      height: 1000px;
-      background-color: #0072bb;
-      color: #ffffff;
+    section {
+    margin-bottom: 100px;
     }
     
-    
-    
-    .project-grid{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    max-width: 400px;
+    section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
     }
     
-    #beach-image{
-      width: auto;
-      height:auto;
-      padding-top: 20px;
-    
+    h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        text-align: center;
+        }
+
+    section p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-align: justify;
     }
     
-    .small-app-grid{
-      display: inline-block;
-      margin-top: -4px;
-    }
-    .project-title{
-      position: absolute;
-      color:white;
-      background-color: aqua;
-      Text-align: center;
+    .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
     }
     
-    .project-image{
-        width: 300px;
-        height: 175px;
+    .skill {
+    width: calc(33.33% - 20px);
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
     }
     
-    #Contact{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
+    .skill-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
     }
     
-    .fa-instagram {
-    background: #125688;
-    color: white;
+    .skill-bar {
+    height: 10px;
+    background-color:  #feca1b;
+    border-radius: 5px;
+    border-color: #25274d;
+    position: relative;
+    margin-bottom: 20
     }
-    
-    .fa-linkedin {
-    background: #007bb5;
-    color: white;
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        }
+        
+        .project {
+    width: calc(33.33% - 20px);
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+        }
+        
+        .project-name {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        }
+
+        .project-image {
+            max-width: 400px;
+            max-height: 250px;
+        }
+
+        .project-card{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .socials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 40px;
+            }
+
+    .project-card:hover {
+    background-color: #fff;
+    color: #feca1b;
+    box-shadow: 0 0 5px #feca1b;
     }
-    
-    footer{
-      text-align: center;
-    }
-    
-}
+        
