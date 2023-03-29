@@ -168,6 +168,7 @@ header .nav-bar ul{
         .project-image {
             max-width: 400px;
             max-height: 250px;
+            border-radius: 5px;
         }
 
         .project-card{
@@ -186,5 +187,11 @@ header .nav-bar ul{
     border-radius: 5px;
     color: #feca1b;
     box-shadow: 0 0 5px #feca1b;
+    }
+
+    #pdf-container{
+        max-width: 700px;
+        height: 850px;
+        margin: auto;
     }
         
