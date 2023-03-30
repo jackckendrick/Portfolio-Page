@@ -19,6 +19,8 @@ The next section contains my cuurrent projects. If the user clicks on the projec
 The last section contains my contact information including links to my social media acocunts and email. 
 
 
+Deployed Link: https://jackckendrick.github.io/Portfolio-Page/
+
 ## License
 
 This project utilizes a MIT license. 
