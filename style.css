@@ -25,7 +25,7 @@ body {
     }
     
     header .title {
-    float: left;
+    float: right;
     font-size: 24px;
     }
     
@@ -34,21 +34,23 @@ body {
     }
     
     nav .nav-bar {
-    float: right;
+    /* float: right; */
     }
 
     
     header .nav-bar ul {
     list-style: none;
     position:fixed;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
     }
     
     header .nav-bar ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-inline: 10px;
+    text-align: center;
     }
     
     header .nav-bar ul li a {
@@ -62,8 +64,8 @@ body {
 
 header .nav-bar ul{
     background-color: rgba(107, 162, 206, 0.5);
-    border-radius: 5%;
-    justify-content: center;
+    border-radius: 3px;
+    justify-content: space-around;
     }
     
     header .intro {
